@@ -1,0 +1,30 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    height: 80px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    box-sizing: border-box;
+    background-color: #F6FAFC;
+}
+
+#header ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+#header ul li {
+    float: left;
+    margin-left: 15px;
+}
+#header ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+#header ul li a:hover,
+#header ul li a.active {
+    color: #055097;
+}

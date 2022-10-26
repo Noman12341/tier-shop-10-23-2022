@@ -1,0 +1,61 @@
+#c-card {
+    background-color: #fff;
+    padding-bottom: 30px;
+    box-shadow: 5px 10px 30px rgb(213 223 237 / 83%);
+    border: 1px solid #e5ecf5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+#c-card img {
+    display: inline-block;
+    width: 100%;
+}
+#c-card h2 {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 22px;
+}
+.c-star-rating {
+    color: goldenrod;
+}
+#c-card .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.c-c-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #055097 !important;
+} 
+.c-cart-btn {
+    font-size: 20px;
+    transition: all .4s;
+    color: lightgray;
+}
+.c-cart-btn:hover {
+    color: #055097;
+}
+.tyre-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap:10px;
+    flex-wrap: wrap;
+}
+.tyre-details a {
+    display: inline-block;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 4px;
+    color: gray;
+    text-decoration-line: none;
+    margin-top: 4px;
+    transition: color .6s, border-color .6s;
+}
+.tyre-details a:hover {
+    color: #055097;
+    border-color: #055097;
+}

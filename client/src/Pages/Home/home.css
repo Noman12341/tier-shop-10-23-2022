@@ -1,0 +1,12 @@
+#products {
+    background-color: #F6FAFC;
+}
+#products h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: Saira;
+    line-height: 48px;
+    font-weight: 400;
+    font-style: normal;
+    color: #053f75;
+}
