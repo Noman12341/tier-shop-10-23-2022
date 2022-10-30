@@ -8,7 +8,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     position: sticky;
     box-sizing: border-box;
-    background-color: #F6FAFC;
+    background-color: #E12319;
 }
 
 #header ul {
@@ -20,7 +20,7 @@
     margin-left: 15px;
 }
 #header ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 500;
 }

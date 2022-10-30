@@ -3,15 +3,13 @@ import "./productCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   solid,
-  regular,
-  brands,
-  icon,
+
 } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 function ProductCard() {
   return (
     <div id="c-card">
-      <a href="/">
+      <a href="/details">
         <img
           src="http://pneupress.aislinthemes.com/app/uploads/2016/07/07B-300x300.jpg"
           alt=""
@@ -26,9 +24,9 @@ function ProductCard() {
       </div>
       <div className="price px-3">
         <span className="c-c-price">$445</span>
-        <spa className="c-cart-btn">
+        <span className="c-cart-btn">
           <FontAwesomeIcon icon={solid("cart-shopping")} />
-        </spa>
+        </span>
       </div>
       <div class="tyre-details">
         <a href="/">

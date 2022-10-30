@@ -1,0 +1,39 @@
+#detials-section {
+    padding: 40px 0;
+}
+
+.product-title {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    line-height: 40px;
+    color: #053f75;
+}
+.p-price {
+    color: #49a2d9;
+    font-size: 28px;
+}
+.p-description {
+    max-width: 60%;
+}
+.p-detail-cart-btn {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: #0fa6e1;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color .4s;
+}
+.p-detail-cart-btn:hover {
+    background-color: #053f75;
+}
+.p-detail-tabs h2{
+    color: #0fa6e1;
+}
+.bg-c-gray {
+    background-color: #f0f0f0;
+}
