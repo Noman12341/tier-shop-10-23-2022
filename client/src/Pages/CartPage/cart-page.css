@@ -1,0 +1,8 @@
+.cart-list-container {
+    border: 1px solid #c8c8c8;
+}
+.cart-detail-header {
+    font-weight: 700;
+    color: #5f7586;
+    padding: 10px;
+}

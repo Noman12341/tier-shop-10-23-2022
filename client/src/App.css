@@ -1,3 +1,13 @@
+.page-title {
+    line-height: 48px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    font-style: normal;
+    color: #055097;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
 .p-section {
     padding: 40px 80px;
 }

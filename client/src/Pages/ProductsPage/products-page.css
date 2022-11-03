@@ -1,0 +1,25 @@
+.search-key {
+    text-align: center;
+    color: #055097;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.result-count-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.result-count-sort p {
+    font-weight: 400;
+    color: #5f7586;
+    font-size: 17px;
+}
+.result-count-sort select {
+    padding: 15px;
+    font-size: 17px;
+    background-color: white;
+    border: 1px solid #dee4e8;
+    min-width: 200px;
+}
