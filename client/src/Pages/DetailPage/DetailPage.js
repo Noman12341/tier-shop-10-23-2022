@@ -3,8 +3,11 @@ import "./detail-page.css";
 import { Container, Row, Col, Tab, Tabs } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { useNavigate } from 'react-router-dom';
+
 function DetailPage() {
   const [key, setKey] = useState("Detail");
+  const navigate = useNavigate();
 
   return (
     <section id="detials-section">
@@ -38,7 +41,7 @@ function DetailPage() {
               rutrum risus gravida non.
             </p>
             <div>
-              <button className="p-detail-cart-btn">Add To Cart</button>
+              <button className="p-detail-cart-btn" onClick={() => navigate('/cart-page')}>Add To Cart</button>
             </div>
           </Col>
         </Row>

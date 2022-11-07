@@ -1,0 +1,36 @@
+.custom-form-lable {
+    font-weight: 400;
+    color: #5f7586;
+    font-size: 17px;
+}
+
+.custom-form-control {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    line-height: normal;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 15px;
+    max-width: 100%;
+    vertical-align: baseline;
+    outline: none;
+    background-color: #eef1f3;
+    color: #141412;
+    border: none;
+}
+
+.check-place-order-wrapper {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.check-place-order-wrapper button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin-right: 14px;
+    outline: none;
+    border-radius: 4px;
+}

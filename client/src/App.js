@@ -1,7 +1,14 @@
 import "./App.css";
-import { Home, DetailPage, ProductsPage, CartPage } from "./Pages";
+import {
+  Home,
+  DetailPage,
+  ProductsPage,
+  CartPage,
+  CheckoutPage,
+} from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Components";
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +19,7 @@ function App() {
           <Route exact path="/details" element={<DetailPage />} />
           <Route exact path="/products-page" element={<ProductsPage />} />
           <Route exact path="/cart-page" element={<CartPage />} />
+          <Route exact path="/checkout-page" element={<CheckoutPage />} />
         </Routes>
         <Footer />
       </>
