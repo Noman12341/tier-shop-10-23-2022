@@ -1,17 +1,28 @@
-import React from "react";
-import "./header.css"
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link} from 'react-router-dom';
 
 function Header() {
   return (
-    <section id="header">
-      <span>Logo</span>
-      <ul>
-        <li><a href="/home" className="active">Home</a></li>
-        <li><a href="/About">services</a></li>
-        <li><a href="/home">About</a></li>
-        <li><a href="/home">Contect</a></li>
-      </ul>
-    </section>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Container>
+        <Navbar.Brand href="#home">Logo</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+        
+          <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Link className='nav-link' to="/">Home</Link>
+            <Link className='nav-link' to="/">
+              About
+            </Link>
+            <Link className='nav-link' to="/">
+              Contact Us
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

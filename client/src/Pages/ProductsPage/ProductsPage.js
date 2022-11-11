@@ -9,7 +9,7 @@ function ProductsPage() {
       <Container>
         <h1 className="page-title">Shop</h1>
         <h2 className="search-key">215/45 R17</h2>
-        <div className="result-count-sort">
+        <div className="result-count-sort mb-4">
             <p>Showing all 2 results</p>
             <select>
                 <option>By Size</option>
@@ -18,7 +18,7 @@ function ProductsPage() {
                 <option>By Size</option>
             </select>
         </div>
-        <Row>
+        <Row className="g-4">
           <Col md="3">
             <ProductCard />
           </Col>

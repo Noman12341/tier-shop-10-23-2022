@@ -1,0 +1,7 @@
+#home-search-card {
+    width: 40%;
+    padding: 20px;
+    border-radius: 4px;
+    background: rgba(42, 42, 42, 0.2);
+    backdrop-filter: blur(22px);
+}
