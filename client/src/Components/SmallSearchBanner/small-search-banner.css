@@ -1,0 +1,24 @@
+#small-search-banner {
+    min-height:300px;
+    background-image: url('../../Assets/Images//header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+.s-search-banner {
+    padding: 20px;
+    border-radius: 4px;
+    background: rgba(42, 42, 42, 0.2);
+    backdrop-filter: blur(22px);
+}
+.s-search-banner h2 {
+    color: white;
+}
+.small-banner-fields-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+    color: white;
+}
