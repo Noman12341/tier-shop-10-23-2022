@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./detail-page.css";
-import { Container, Row, Col, Tab, Tabs } from "react-bootstrap";
+import { Container, Row, Col, Tab, Tabs, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function DetailPage() {
   const [key, setKey] = useState("Detail");
@@ -22,18 +22,7 @@ function DetailPage() {
             />
           </Col>
           <Col md={7}>
-            <h1 className="product-title">
-              Perfect Titanium Tire Cover (18 inches)
-            </h1>
-            <div>
-              <FontAwesomeIcon icon={solid("star")} />
-              <FontAwesomeIcon icon={solid("star")} />
-              <FontAwesomeIcon icon={solid("star")} />
-              <FontAwesomeIcon icon={solid("star")} />
-            </div>
-            <div className="p-price">
-              <span>£234.00</span>
-            </div>
+            <h2>Perfect Titanium Tire Cover (18 inches)</h2>
             <p className="p-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               quis semper mauris. Pellentesque non sapien in nibh commodo
@@ -41,8 +30,18 @@ function DetailPage() {
               rutrum risus gravida non.
             </p>
             <div>
-              <button className="p-detail-cart-btn" onClick={() => navigate('/cart-page')}>Add To Cart</button>
+              <h6>Tyre Size 235/223/R35</h6>
+              <div className="my-4">
+                <h6>Brand Boto</h6>
+                <h6>Tyre Size 235/223/R35</h6>
+                <h6>Height 55</h6>
+                <h6>Speed Rating 77</h6>
+                <h6>Index</h6>
+              </div>
+              <h6>Catagory: Brand Boto</h6>
             </div>
+            <Button variant="primary" size="lg" className="p-detail-cart-btn mt-2">ADD TO CART</Button>
+
           </Col>
         </Row>
         <div className="p-5">

@@ -12,7 +12,7 @@ function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
         
           <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Link className='nav-link' to="/">Home</Link>
+            <Link className='nav-link active' to="/">Home</Link>
             <Link className='nav-link' to="/">
               About
             </Link>

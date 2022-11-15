@@ -22,7 +22,7 @@
     line-height: 14px;
     font-weight: 700;
     color: white;
-    background-color: #0fa6e1;
+    background-color: var(--bs-primary);
     font-size: 14px;
     border: none;
     border-radius: 4px;

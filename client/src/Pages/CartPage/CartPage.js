@@ -9,7 +9,7 @@ function CartPage() {
   const navigate = useNavigate();
 
   return (
-    <section className="pb-5">
+    <section className="pb-5 cart-page-container" >
       <Container>
         <h1 className="page-title">Cart</h1>
         {/* Cart list */}
