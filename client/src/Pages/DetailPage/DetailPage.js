@@ -4,7 +4,7 @@ import { Container, Row, Col, Tab, Tabs, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { useNavigate } from "react-router-dom";
-
+import {Slider} from '../../Components'
 function DetailPage() {
   const [key, setKey] = useState("Detail");
   const navigate = useNavigate();
@@ -44,41 +44,11 @@ function DetailPage() {
 
           </Col>
         </Row>
-        <div className="p-5">
-          <Tabs
-            id="p-detail-tabs"
-            activeKey={key}
-            onSelect={(k) => setKey(k)}
-            className="mb-3 p-detail-tabs"
-          >
-            <Tab eventKey="Detail" title="Detail">
-              <div className="p-5 bg-c-gray">
-                <h2 className="">Description</h2>
-                <p style={{ width: "60%" }}>
-                  Tires come in a variety of diameters, ranging from 13″ to 22″.
-                  To find your vehicle’s wheel diameter or size, check the
-                  vehicle’s tire information placard on the inside of the
-                  driver’s side door. You can also find your tire size by
-                  checking the sidewalls of your current tires, where you’ll see
-                  a series of numbers and symbols similar to: P215/60 R17. The
-                  wheel diameter will be the last number in the series. In this
-                  example, the vehicle’s wheel diameter is 17″.
-                </p>
-              </div>
-            </Tab>
-            <Tab eventKey="reviows" title="Reviews">
-              <div className="p-4 bg-c-gray">
-                <h2>1 review for Perfect Titanium Tire Cover (18 inches)</h2>
-                <p>There are no reviews yet.</p>
-                <p>
-                  Be the first to review “Perfect Titanium Tire Cover (18
-                  inches)” Your email address will not be published. Required
-                  fields are marked *
-                </p>
-              </div>
-            </Tab>
-          </Tabs>
-        </div>
+        
+        <Container >
+          <h4>Related Tyers</h4>
+          <Slider />
+        </Container>
       </Container>
     </section>
   );

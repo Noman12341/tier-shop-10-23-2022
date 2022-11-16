@@ -23,3 +23,16 @@
     border: 1px solid #dee4e8;
     min-width: 200px;
 }
+.pagination {
+    --bs-pagination-border-width: 0px;
+    --bs-pagination-border-radius: 4px;
+    --bs-pagination-color: black;
+    column-gap: 10px;
+    border-radius: 29px;
+}
+
+.pagination a,
+.pagination .active,
+.pagination .page-link{
+    border-radius: 8px;
+}

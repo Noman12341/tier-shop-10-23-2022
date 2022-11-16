@@ -2,7 +2,7 @@ import React from "react";
 import "./products-page.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProductCard, SmallSearchBanner } from "../../Components";
-import Pagination from 'react-bootstrap/Pagination';
+import Pagination from "react-bootstrap/Pagination";
 
 function ProductsPage() {
   return (
@@ -34,23 +34,15 @@ function ProductsPage() {
           </Col>
         </Row>
         <div className="mt-5 p-4 d-flex align-items-center justify-content-center">
-        <Pagination>
-      <Pagination.First />
-      <Pagination.Prev />
-      <Pagination.Item>{1}</Pagination.Item>
-      <Pagination.Ellipsis />
-
-      <Pagination.Item>{10}</Pagination.Item>
-      <Pagination.Item>{11}</Pagination.Item>
-      <Pagination.Item active>{12}</Pagination.Item>
-      <Pagination.Item>{13}</Pagination.Item>
-      <Pagination.Item disabled>{14}</Pagination.Item>
-
-      <Pagination.Ellipsis />
-      <Pagination.Item>{20}</Pagination.Item>
-      <Pagination.Next />
-      <Pagination.Last />
-    </Pagination>
+          <Pagination>
+            <Pagination.Prev className="mr-3">Back</Pagination.Prev>
+            <Pagination.Item active>{1}</Pagination.Item>
+            <Pagination.Item>{2}</Pagination.Item>
+            <Pagination.Item>{3}</Pagination.Item>
+            <Pagination.Item>{4}</Pagination.Item>
+            <Pagination.Item>{5}</Pagination.Item>
+            <Pagination.Next className="ml-3">Next</Pagination.Next>
+          </Pagination>
         </div>
       </Container>
     </section>

@@ -6,4 +6,10 @@
     font-size: 16px;
     font-weight: 500;
     border-radius: 8px;
+    transition: transform 300ms ease-out;
+}
+.view-detail-card-link:hover {
+    color: white;
+    transform: translateY(-4px);
+    
 }
