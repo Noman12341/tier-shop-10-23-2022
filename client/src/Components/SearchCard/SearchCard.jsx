@@ -52,7 +52,7 @@ function SearchCard() {
         </Form.Group>
         <div className="d-flex justify-content-end">
           <span>
-            <Link to="/">More Options</Link>
+            <Link to="/" style={{fontSize: "16px"}}>More Options</Link>
           </span>
         </div>
         <div className="d-grid mt-4">

@@ -1,8 +1,7 @@
 import React from "react";
 import "./small-search-banner.css";
-import SearchCard from "../SearchCard/SearchCard";
-import { Form, Row, Col, Button } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Form, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 function SmallSearchBanner() {
   const navigate = useNavigate();
@@ -48,14 +47,12 @@ function SmallSearchBanner() {
                 <option>Tyre C</option>
               </Form.Select>
             </Form.Group>
-            <div>
-              <Button className="mt-4"
+              <Button style={{marginTop:"30px"}}
                 variant="primary"
                 onClick={() => navigate("/products-page")}
               >
                 Search For Tyre
               </Button>
-            </div>
           </div>
         </Form>
       </div>

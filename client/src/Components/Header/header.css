@@ -19,12 +19,26 @@
     float: left;
     margin-left: 15px;
 }
-#header ul li a {
+/* #header ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    background-color: #055097!important;
 }
 #header ul li a:hover,
 #header ul li a.active {
     color: #055097;
+} */
+.navbar-logo {
+    display: block;
+    height: 80px;
+    width: 254px;
+}
+#custom-nav .nav-link {
+    font-size: 15px;
+}
+#custom-nav .nav-link.active {
+    background-color: var(--c-primary-color);
+    color: var(--bs-white);
+    border-radius: 6px;
 }

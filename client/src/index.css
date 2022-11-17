@@ -1,3 +1,7 @@
+:root {
+  --c-primary-color: #2490EF;
+}
+
 * {
   margin: 0;
   padding: 0;

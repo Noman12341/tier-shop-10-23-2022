@@ -1,7 +1,10 @@
 #detials-section {
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
-
+#detials-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
 .product-title {
     font-size: 30px;
     font-weight: normal;
@@ -10,11 +13,13 @@
     color: #053f75;
 }
 .p-price {
-    color: #49a2d9;
-    font-size: 28px;
+    font-weight: 600;
+    font-size: 23px;
 }
 .p-description {
     max-width: 60%;
+    font-size: 20px;
+    font-weight: 400;
 }
 .p-detail-cart-btn {
     padding: 20px 40px;
@@ -25,15 +30,9 @@
     background-color: var(--bs-primary);
     font-size: 14px;
     border: none;
-    border-radius: 4px;
+    border-radius:10px;
     transition: background-color .4s;
 }
 .p-detail-cart-btn:hover {
     background-color: #053f75;
-}
-.p-detail-tabs h2{
-    color: #0fa6e1;
-}
-.bg-c-gray {
-    background-color: #f0f0f0;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/navigation';
@@ -15,7 +15,7 @@ function Slider() {
       className="pt-5"
       modules={[Navigation, Pagination, A11y]}
       spaceBetween={50}
-      slidesPerView={5}
+      slidesPerView={4}
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}

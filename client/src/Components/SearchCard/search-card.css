@@ -1,7 +1,13 @@
 #home-search-card {
-    width: 35%;
+    max-width: 698px;
+    max-height: 537px;
+    /* background: var(--bs-black); */
+    /* opacity: 0.5; */
     padding: 40px;
-    border-radius: 4px;
+    border-radius: 18px;
     background: rgba(42, 42, 42, 0.2);
     backdrop-filter: blur(22px);
+}
+#home-search-card h1 {
+    opacity: 2!important;
 }

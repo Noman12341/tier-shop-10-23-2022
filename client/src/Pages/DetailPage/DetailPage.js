@@ -1,25 +1,29 @@
 import React, { useState } from "react";
 import "./detail-page.css";
-import { Container, Row, Col, Tab, Tabs, Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import {SmallSearchBanner} from "../../Components";
 import { useNavigate } from "react-router-dom";
 import {Slider} from '../../Components'
+import TyreImg from '../../Assets/Images/tyre-img.png';
+import TyreLogo from '../../Assets/Images/tyre-logo.png';
+
 function DetailPage() {
-  const [key, setKey] = useState("Detail");
+
   const navigate = useNavigate();
 
   return (
     <section id="detials-section">
-      <Container fluid>
+      <SmallSearchBanner />
+      <Container className="mt-5" fluid>
         <Row>
           <Col md={5}>
+          <div className="text-center p-5 border">
             <img
-              src="http://pneupress.aislinthemes.com/app/uploads/2016/07/07B-300x300.jpg"
+              src={TyreImg}
               alt=""
-              height={500}
-              width={500}
+              style={{maxHeight: "391px", maxWidth: "577px"}}
             />
+            </div>
           </Col>
           <Col md={7}>
             <h2>Perfect Titanium Tire Cover (18 inches)</h2>
@@ -29,7 +33,7 @@ function DetailPage() {
               lobortis nec molestie nisl. Maecenas fringilla laoreet nunc, et
               rutrum risus gravida non.
             </p>
-            <div>
+            <div className="p-price">
               <h6>Tyre Size 235/223/R35</h6>
               <div className="my-4">
                 <h6>Brand Boto</h6>
@@ -40,7 +44,7 @@ function DetailPage() {
               </div>
               <h6>Catagory: Brand Boto</h6>
             </div>
-            <Button variant="primary" size="lg" className="p-detail-cart-btn mt-2">ADD TO CART</Button>
+            <Button variant="primary" onClick={() => navigate("/cart-page")} size="lg" className="p-detail-cart-btn mt-2">ADD TO CART</Button>
 
           </Col>
         </Row>
