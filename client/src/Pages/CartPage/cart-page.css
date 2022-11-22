@@ -1,79 +1,40 @@
-.cart-list-container {
-    border: 1px solid #c8c8c8;
+.cart-table {
+    width: 100%;
+    padding: 23px;
 }
 
-.cart-page-container {
-    height: calc(100vh - 10vh);
+.cart-table td {
+    padding: 24px;
 }
-.cart-detail-header {
+
+.cart-table th {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 23px;
+}
+
+.table-header-border {
+    border-top: 2px solid #E6E6E6;
+    border-bottom: 2px solid #E6E6E6;
+}
+
+.cart-list-price {
     font-weight: 700;
-    color: #5f7586;
-    padding: 10px;
+    font-size: 24px;
+    line-height: 154.12%;
 }
 
-.cart-products-list {
-    /* padding: 20px; */
-    border: 1px solid #c8c8c8;
-}
-
-.cart-list-p-name {
-    color: #2ABFD4;
-    vertical-align: middle;
-}
-
-.cart-list-p-name a {
-    display: inline-block;
-    font-size: 14px;
-    color: #414b4f;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.cart-list-p-name a:hover {
-    color: #8ed1fc;
-}
-
-.cart-list-p-price span {
-    font-size: 14px;
-    font-weight: normal;
-}
-
-.cart-list-counter input {
-    width: 80px;
-    border: 1px solid #c8c8c8;
-    text-align: center;
-    padding: 10px;
-    vertical-align: middle;
-}
-
-/* coupan css */
-.coupon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #c8c8c8;
-}
-.coupon-input-wrapper input {
+.cart-description {
     font-size: 16px;
-    font-weight: 500;
-    padding: 10px;
-    border: 1px solid #d3ced2;
-    margin-right: 14px;
-    outline: none;
-    border-radius: 4px;
-}
-.c-btn {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px;
-    margin-right: 14px;
-    outline: none;
-    border-radius: 4px;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 263px;
 }
 
-/* cart total wrapper */
-.c-total-wrapper {
-    border: 1px solid #d3ced2;
-
+.cart-counter-button {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
 }
