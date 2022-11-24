@@ -1,0 +1,30 @@
+.about-sm-banner {
+    height: 329px;
+    background-image: url("../../Assets//Images/contact-us-header.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.contact-us-detail-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    column-gap: 20px;
+}
+
+.contact-us-detail-wrapper h6 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contact-us-detail-wrapper p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.contact-us-card {
+    padding: 22px;
+    background-color: black;
+    color: white;
+    border-radius: 18px;
+    transform: translateY(-122px);
+}

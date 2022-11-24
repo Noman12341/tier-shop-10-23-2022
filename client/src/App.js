@@ -5,7 +5,8 @@ import {
   ProductsPage,
   CartPage,
   CheckoutPage,
-  AboutUs
+  AboutUs,
+  ContactUs
 } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Components";
@@ -22,7 +23,7 @@ function App() {
           <Route exact path="/cart-page" element={<CartPage />} />
           <Route exact path="/checkout-page" element={<CheckoutPage />} />
           <Route exact path="/about-us" element={<AboutUs />} />
-
+          <Route exact path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
       </>

@@ -23,7 +23,7 @@ function Header() {
             <Link className={`nav-link ${location.pathname === "/about-us" && "active"}`} to="/about-us">
               About
             </Link>
-            <Link className={`nav-link ${location.pathname === "/contact-us" && "active"}`} to="/">
+            <Link className={`nav-link ${location.pathname === "/contact-us" && "active"}`} to="/contact-us">
               Contact Us
             </Link>
           </Nav>
