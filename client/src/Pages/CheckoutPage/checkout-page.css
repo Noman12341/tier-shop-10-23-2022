@@ -24,6 +24,7 @@
 .check-place-order-wrapper {
     margin-top: 20px;
     margin-bottom: 40px;
+    text-align: right;
 }
 
 .check-place-order-wrapper button {
@@ -33,4 +34,32 @@
     margin-right: 14px;
     outline: none;
     border-radius: 4px;
+}
+
+.checkout-items-list {
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    padding: 20px;
+    margin:10px 0;
+}
+
+.checkout-items-list tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* .checkout-items-list tr td {
+    width: auto;
+} */
+
+.checkout-items-list img {
+    max-width: 66px;
+    max-height: 98px;
+}
+
+.bold-text {
+    font-weight: 700;
+    font-size: 24px;
 }
