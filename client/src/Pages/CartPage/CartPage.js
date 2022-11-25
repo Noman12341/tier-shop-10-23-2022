@@ -10,7 +10,7 @@ function CartPage() {
   const navigate = useNavigate();
 
   return (
-    <main className="p-5">
+    <main className="p-5 cart-page-main">
       <h2>Shopping Cart</h2>
       <table className="cart-table">
         <tr className="table-header-border">
@@ -50,7 +50,7 @@ function CartPage() {
           <Button variant="outline-primary">
             back to shopping
           </Button>
-          <Button variant="primary">
+          <Button variant="primary" onClick={() => navigate("/checkout-page")}>
             Go To Checkout
           </Button>
         </div>

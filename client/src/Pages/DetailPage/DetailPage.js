@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 import "./detail-page.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import {SmallSearchBanner} from "../../Components";
+import { SmallSearchBanner } from "../../Components";
 import { useNavigate } from "react-router-dom";
-import {Slider} from '../../Components'
-import TyreImg from '../../Assets/Images/tyre-img.png';
-import TyreLogo from '../../Assets/Images/tyre-logo.png';
+import { Slider } from "../../Components";
+import TyreImg from "../../Assets/Images/tyre-img.png";
+import TyreLogo from "../../Assets/Images/tyre-logo.png";
 
 function DetailPage() {
-
   const navigate = useNavigate();
 
   return (
     <section id="detials-section">
       <SmallSearchBanner />
-      <Container className="mt-5" fluid>
+      <Container className="mt-5">
         <Row>
           <Col md={5}>
-          <div className="text-center p-5 border">
-            <img
-              src={TyreImg}
-              alt=""
-              style={{maxHeight: "391px", maxWidth: "577px"}}
-            />
+            <div className="text-center p-5 border">
+              <img
+                src={TyreImg}
+                alt=""
+                style={{ maxHeight: "391px", maxWidth: "577px" }}
+              />
             </div>
           </Col>
           <Col md={7}>
@@ -44,12 +43,18 @@ function DetailPage() {
               </div>
               <h6>Catagory: Brand Boto</h6>
             </div>
-            <Button variant="primary" onClick={() => navigate("/cart-page")} size="lg" className="p-detail-cart-btn mt-2">ADD TO CART</Button>
-
+            <Button
+              variant="primary"
+              onClick={() => navigate("/cart-page")}
+              size="lg"
+              className="px-5 py-3"
+            >
+              ADD TO CART
+            </Button>
           </Col>
         </Row>
-        
-        <Container >
+
+        <Container>
           <h4>Related Tyers</h4>
           <Slider />
         </Container>

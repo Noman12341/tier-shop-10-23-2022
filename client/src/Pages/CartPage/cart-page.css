@@ -1,3 +1,6 @@
+.cart-page-main {
+    height: calc(100vh - 147px);
+}
 .cart-table {
     width: 100%;
     padding: 23px;

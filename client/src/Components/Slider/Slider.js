@@ -22,22 +22,22 @@ function Slider() {
       onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
-          <ProductCard />
+          <ProductCard size="sm" />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <ProductCard size="sm" />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <ProductCard size="sm" />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <ProductCard size="sm" />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <ProductCard size="sm" />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductCard />
+          <ProductCard size="sm" />
         </SwiperSlide>
       </Swiper>
     </div>

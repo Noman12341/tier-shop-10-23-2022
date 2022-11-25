@@ -97,7 +97,17 @@ function CheckoutPage() {
               </Row>
               {/* Order Summary */}
             </Col>
-            <Col md={6}></Col>
+            <Col md={6}>
+              <div className="payment-methord-option-wrapper">
+                <input type="radio" className="c-payment-select" />
+                <label>Quick Payment</label>
+              </div>
+              <div className="payment-methord-option-wrapper">
+                <input type="radio" className="c-payment-select" />
+                <label>Cash On Delivery</label>
+              </div>
+
+            </Col>
           </Row>
           <div>
             <table className="checkout-items-list">
@@ -117,7 +127,10 @@ function CheckoutPage() {
                   <div style={{ textAlign: "right" }}>
                     <span className="bold-text">£875</span>
                   </div>
-                  <div className="d-flex align-items-center justify-content-between" style={{columnGap: "20px"}}>
+                  <div
+                    className="d-flex align-items-center justify-content-between"
+                    style={{ columnGap: "20px" }}
+                  >
                     <span>Deliver Charges</span>
                     <p className="bold-text mb-0">£39.00</p>
                   </div>
