@@ -11,7 +11,7 @@ function CartPage() {
 
   return (
     <main className="p-5 cart-page-main">
-      <h2>Shopping Cart</h2>
+      <h2 style={{fontWeight: 700, marginBottom: "55px"}}>Shopping Cart</h2>
       <table className="cart-table">
         <tr className="table-header-border">
           <th>Product</th>
@@ -32,8 +32,8 @@ function CartPage() {
             <span>Remove</span>
           </td>
           <td>
-            <div className="d-flex align-item-center justity-content-center" style={{columnGap: "16px"}}>
-              <span>1</span>
+            <div className="d-flex align-item-center justity-content-center" style={{columnGap: "17px"}}>
+              <span style={{ alignSelf: "center", marginRight: "10px"}}>1</span>
               <button className="cart-counter-button">-</button>
               <button className="cart-counter-button">+</button>
             </div>

@@ -10,8 +10,8 @@ function ProductsPage() {
       <SmallSearchBanner />
       <Container>
         <div className="py-5 d-flex align-items-center justify-content-between">
-          <h2>Searched Results</h2>
-          <h6>8 of 31</h6>
+          <h2 className="font-weight-bold">Searched Results</h2>
+          <h6>8 out of 31</h6>
         </div>
         <Row className="g-4">
           <Col md="3">

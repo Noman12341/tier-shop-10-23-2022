@@ -20,7 +20,7 @@ function DetailPage() {
               <img
                 src={TyreImg}
                 alt=""
-                style={{ maxHeight: "391px", maxWidth: "577px" }}
+                style={{ maxHeight: "577px", maxWidth: "391px" }}
               />
             </div>
           </Col>
@@ -33,21 +33,21 @@ function DetailPage() {
               rutrum risus gravida non.
             </p>
             <div className="p-price">
-              <h6>Tyre Size 235/223/R35</h6>
-              <div className="my-4">
-                <h6>Brand Boto</h6>
-                <h6>Tyre Size 235/223/R35</h6>
-                <h6>Height 55</h6>
-                <h6>Speed Rating 77</h6>
-                <h6>Index</h6>
+              <h5>Tyre Size 235/223/R35</h5>
+              <div className="my-5">
+                <h5>Brand Boto</h5>
+                <h5>Pattern Susqua H/T </h5>
+                <h5>Load Index: 112</h5>
+                <h5>Speed Rating: H </h5>
+                <h5>Tread Dept (mm): 8.5</h5>
               </div>
-              <h6>Catagory: Brand Boto</h6>
+              <h5>Categories: BOTO, PCR, Tyres</h5>
             </div>
             <Button
               variant="primary"
               onClick={() => navigate("/cart-page")}
               size="lg"
-              className="px-5 py-3"
+              className="px-5 py-3 mt-5"
             >
               ADD TO CART
             </Button>
@@ -55,7 +55,7 @@ function DetailPage() {
         </Row>
 
         <Container>
-          <h4>Related Tyers</h4>
+          <h4 style={{marginTop: "131px"}}>Related Tyers</h4>
           <Slider />
         </Container>
       </Container>

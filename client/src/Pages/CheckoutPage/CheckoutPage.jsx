@@ -5,13 +5,14 @@ import TyreImg from "../../Assets/Images/tyre-img.png";
 
 function CheckoutPage() {
   return (
-    <section>
+    <section id="checkout-page">
       <Container>
-        <h1 className="my-4">Checkout</h1>
+        <h1 style={{marginBottom: "103px", marginTop: "77px"}}>Checkout</h1>
 
         <Form>
           <Row>
             <Col md={6}>
+            <h5 style={{ fontWeight: 700}}>Address</h5>
               <Row>
                 <Col md={6}>
                   <Form.Group>
@@ -98,6 +99,8 @@ function CheckoutPage() {
               {/* Order Summary */}
             </Col>
             <Col md={6}>
+            <h5 style={{ fontWeight: 700, marginBottom: "75px"}}>Payment Methord</h5>
+
               <div className="payment-methord-option-wrapper">
                 <input type="radio" className="c-payment-select" />
                 <label>Quick Payment</label>
@@ -110,6 +113,7 @@ function CheckoutPage() {
             </Col>
           </Row>
           <div>
+            <h5 style={{fontWeight: 700, marginTop: "70px", marginBottom: "37px"}}>Order Summary</h5>
             <table className="checkout-items-list">
               <tr>
                 <td>
@@ -124,15 +128,17 @@ function CheckoutPage() {
                   </div>
                 </td>
                 <td>
+                  <div style={{ borderLeft: "2px solid #E6E6E6",borderRight: "2px solid #E6E6E6", padding: "0 30px"  }}>
                   <div style={{ textAlign: "right" }}>
                     <span className="bold-text">£875</span>
                   </div>
                   <div
                     className="d-flex align-items-center justify-content-between"
-                    style={{ columnGap: "20px" }}
+                    style={{ columnGap: "150px"}}
                   >
                     <span>Deliver Charges</span>
                     <p className="bold-text mb-0">£39.00</p>
+                  </div>
                   </div>
                 </td>
                 <td>

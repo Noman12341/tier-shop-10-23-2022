@@ -13,11 +13,12 @@
     color: #053f75;
 }
 .p-price {
+    padding-top: 24px;
     font-weight: 600;
     font-size: 23px;
 }
 .p-description {
-    max-width: 60%;
+    max-width: 761px;
     font-size: 20px;
     font-weight: 400;
 }

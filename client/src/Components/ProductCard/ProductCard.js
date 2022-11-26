@@ -20,6 +20,7 @@ function ProductCard(props) {
         <Card.Title className="text-center font-size-sm">
           <img className={props.size === "sm" ? "tyre-logo-sm" : "tyre-logo"}  src={TyreLogo} alt="tyrelogo.png" />
         </Card.Title>
+        <h5 className="text-center">Tyre Size 235/55 R17</h5>
         <div className="text-center mt-3">
           <Link to="/details" className="view-detail-card-link">
             View Details

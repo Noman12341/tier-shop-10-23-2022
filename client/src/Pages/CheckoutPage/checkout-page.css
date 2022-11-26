@@ -80,3 +80,6 @@
     background-color: black;
     color: black;
 }
+#checkout-page .form-label {
+    margin-top: 40px;
+}
