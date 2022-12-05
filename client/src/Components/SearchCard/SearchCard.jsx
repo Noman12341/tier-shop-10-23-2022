@@ -1,14 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./search-card.css";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import {useSelector, useDispatch } from 'react-redux';
+import { productsThunk } from '../../Store/Actions/product';
 
 function SearchCard() {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
+    const handleonSubmit = () => {
+      dispatch(productsThunk())
+      // navigate("/products-page")
+    }
+
+    useEffect(() => {
+
+    },[]);
   return (
     <div id="home-search-card">
       <h1 className="text-center my-3">Tyre Search</h1>
@@ -56,7 +67,7 @@ function SearchCard() {
           </span>
         </div>
         <div className="d-grid mt-4">
-          <Button variant="primary" onClick={() => navigate("/products-page")}>Search For Tyre</Button>
+          <Button variant="primary" onClick={handleonSubmit}>Search For Tyre</Button>
         </div>
       </Form>
     </div>
