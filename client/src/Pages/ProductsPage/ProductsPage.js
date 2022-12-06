@@ -3,9 +3,12 @@ import "./products-page.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProductCard, SmallSearchBanner } from "../../Components";
 import Pagination from "react-bootstrap/Pagination";
+import { useSelector } from "react-redux";
 
 function ProductsPage() {
-  return (
+  const productReducer = useSelector((state) => state.product);
+  console.log("Product", productReducer)
+  return productReducer.products ? (
     <section id="products-page-section">
       <SmallSearchBanner />
       <Container>
@@ -14,7 +17,10 @@ function ProductsPage() {
           <h6>8 out of 31</h6>
         </div>
         <Row className="g-4">
-          <Col md="3">
+          {productReducer.products.data.map(item => <Col md="3">
+            <ProductCard key={item._id} id={item._id} imgUrl={item.imgUrl} name={item.name} size="sm" />
+          </Col>)}
+          {/* <Col md="3">
             <ProductCard />
           </Col>
           <Col md="3">
@@ -28,10 +34,7 @@ function ProductsPage() {
           </Col>
           <Col md="3">
             <ProductCard />
-          </Col>
-          <Col md="3">
-            <ProductCard />
-          </Col>
+          </Col> */}
         </Row>
         <div className="mt-5 p-4 d-flex align-items-center justify-content-center">
           <Pagination>
@@ -46,6 +49,8 @@ function ProductsPage() {
         </div>
       </Container>
     </section>
+  ) : (
+    <h1>Loading...</h1>
   );
 }
 

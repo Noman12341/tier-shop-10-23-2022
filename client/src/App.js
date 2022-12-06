@@ -6,7 +6,8 @@ import {
   CartPage,
   CheckoutPage,
   AboutUs,
-  ContactUs
+  ContactUs,
+  UploadProductPage
 } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Components";
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/checkout-page" element={<CheckoutPage />} />
           <Route exact path="/about-us" element={<AboutUs />} />
           <Route exact path="/contact-us" element={<ContactUs />} />
+          <Route exact path="/upload-product-page" element={<UploadProductPage />} />
         </Routes>
         <Footer />
       </>

@@ -11,15 +11,19 @@ import { productsThunk } from '../../Store/Actions/product';
 function SearchCard() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    const productReducer = useSelector(state => state.product);
 
     const handleonSubmit = () => {
       dispatch(productsThunk())
-      // navigate("/products-page")
     }
 
     useEffect(() => {
+      if(!productReducer.isLoading && productReducer.isSuccess && productReducer.products){
+        navigate("/products-page");
+      }
+    },[productReducer.isLoading]);
 
-    },[]);
+
   return (
     <div id="home-search-card">
       <h1 className="text-center my-3">Tyre Search</h1>

@@ -14,6 +14,7 @@ const productsRoutes = require('./routes/products');
 
 
 app.use('/products', productsRoutes);
+app.use('/static', express.static('assets'))
 
 const CONNECTION_URL = 'mongodb+srv://noman12341:Noman1234@cluster0.irspub7.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 4000;

@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./detail-page.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { SmallSearchBanner } from "../../Components";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Slider } from "../../Components";
 import TyreImg from "../../Assets/Images/tyre-img.png";
 import TyreLogo from "../../Assets/Images/tyre-logo.png";
+import { useSelector } from "react-redux";
 
 function DetailPage() {
+  const params = useParams();
   const navigate = useNavigate();
 
-  return (
+  const productReducer = useSelector((state) => state.product);
+
+  return productReducer.selectedProduct ? (
     <section id="detials-section">
       <SmallSearchBanner />
       <Container className="mt-5">
@@ -18,24 +22,19 @@ function DetailPage() {
           <Col md={5}>
             <div className="text-center p-5 border">
               <img
-                src={TyreImg}
+              src={`http://localhost:4000/static/images/${productReducer.selectedProduct.imgUrl}`}
                 alt=""
                 style={{ maxHeight: "577px", maxWidth: "391px" }}
               />
             </div>
           </Col>
           <Col md={7}>
-            <h2>Perfect Titanium Tire Cover (18 inches)</h2>
-            <p className="p-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              quis semper mauris. Pellentesque non sapien in nibh commodo
-              lobortis nec molestie nisl. Maecenas fringilla laoreet nunc, et
-              rutrum risus gravida non.
-            </p>
+            <h2>{productReducer.selectedProduct.name}</h2>
+            <p className="p-description">{productReducer.selectedProduct.description}</p>
             <div className="p-price">
-              <h5>Tyre Size 235/223/R35</h5>
+              <h5>Tyre Size {productReducer.selectedProduct.size}</h5>
               <div className="my-5">
-                <h5>Brand Boto</h5>
+                <h5>Brand {productReducer.selectedProduct.brand}</h5>
                 <h5>Pattern Susqua H/T </h5>
                 <h5>Load Index: 112</h5>
                 <h5>Speed Rating: H </h5>
@@ -55,11 +54,13 @@ function DetailPage() {
         </Row>
 
         <Container>
-          <h4 style={{marginTop: "131px"}}>Related Tyers</h4>
+          <h4 style={{ marginTop: "131px" }}>Related Tyers</h4>
           <Slider />
         </Container>
       </Container>
     </section>
+  ) : (
+    <h1>Loading...</h1>
   );
 }
 
